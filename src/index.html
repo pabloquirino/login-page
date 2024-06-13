@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../src/style.css">
+    <title>Login Page</title>
+</head>
+<body>
+    
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a class="btnHome" href="#">Home</a>
+            <a class="btnAbout" href="#">About</a>
+            <a class="btnServices" href="#">Services</a>
+            <a class="btnContact" href="#">Contact</a>
+            <button class="btnLogin">Login</button>
+        </nav>
+    </header>
+
+    <div class="home">
+        <h2 id="typewriter"></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit autem voluptatem veritatis reprehenderit culpa sint ipsam officiis id! Delectus repellat ab voluptatibus iusto eligendi fuga dolor alias dignissimos, cumque vitae?</p>
+    </div>
+
+    <div class="about">
+        <h2>Information about the website</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit autem voluptatem veritatis reprehenderit culpa sint ipsam officiis id! Delectus repellat ab voluptatibus iusto eligendi fuga dolor alias dignissimos, cumque vitae?</p>
+    </div>
+
+    <div class="services">
+        <h2>Website services</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit autem voluptatem veritatis reprehenderit culpa sint ipsam officiis id! Delectus repellat ab voluptatibus iusto eligendi fuga dolor alias dignissimos, cumque vitae?</p>
+    </div>
+
+    <div class="contact">
+        <h2>Contact me</h2>
+        <p>Let's create a project together? contact me at +55(21)983997371 &#128521;</p>
+    </div>
+
+    <div class="wrapper">
+        <span><i class="fa-solid fa-xmark"></i></span>
+
+        <div class="form-box login">
+            <h2>Login</h2>
+
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <i id="eye-slash1" class="fa-solid fa-eye-slash"></i>
+                        <i id="eye1" class="fa-solid fa-eye"></i>
+                    </span>
+                    <input class="passwordInput" type="password" required>
+                    <label>password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+
+            <form id="formRegister" action="#">
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <input id="nameInput" type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    <input id="emailInput" type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <i id="eye-slash2" class="fa-solid fa-eye-slash"></i>
+                        <i id="eye2" class="fa-solid fa-eye"></i>
+                    </span>
+                    <input class="passwordInput" type="password" required>
+                    <label>password</label>
+                </div>
+
+                <div class="generator">
+                    <button type="button" class="generatorBtn">generate password</button>
+                    <div>
+                        <span class="passwordStrength">VERY WEAK</span>
+                        <span class="limitStrength"></span>
+                    </div>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input id="checkboxInput" type="checkbox">I agree to the terms & conditions</label>
+                </div>
+
+                <button type="submit" class="btn">Register</button>
+
+                <div class="login-register">
+                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
